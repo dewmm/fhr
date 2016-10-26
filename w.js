@@ -70,7 +70,7 @@ function load() {
         } else {
             var i = getParameter("dl"),
                 d = base64_decode(i);
-            n.innerHTML = '<h2 style="padding-bottom:-10px;">Link will appear in ' + r.toString() + ' Second<br /><button id="btn" style="padding-bottom:-10px;" class="Visit_Link btn">Skip and Continue</button></h2>', document.getElementById("btn").onmouseover = function() {
+            n.innerHTML = '<h3 style="padding-bottom:-10px;">Link will appear in ' + r.toString() + ' Second<br /><button id="btn" style="padding-bottom:-10px;" class="Visit_Link btn">Skip and Continue</button></h2>', document.getElementById("btn").onmouseover = function() {
                 return document.getElementById("btn").style.display = "none", !1
             }, e.style.display = "none", o.style.display = "none", $("#adsright").click(function() {
                 $(this).slideUp(), window.open(d), n.parentNode.replaceChild(t, n), clearInterval(a), o.style.display = "inline", e.style.display = "inline", document.getElementById("dlurl").innerHTML = '<a id="download" href="' + d + '"><button id="btn" class="Visit_Link" style="text-align:justify;margin-bottom:2px;">Visit Link</button></a>'
